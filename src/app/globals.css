@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-silva-green: #0F2E24;
+  --color-silva-beige: #E8D8B5;
+  --color-silva-brown: #8C5A3C;
+  --color-silva-cream: #F6F1E8;
+  --font-sans: var(--font-outfit), sans-serif;
+}
+
+:root {
+  --background: var(--color-silva-green);
+  --foreground: var(--color-silva-beige);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base utility for hiding scrollbar while developing */
+::-webkit-scrollbar {
+  display: none;
+}
